@@ -1,0 +1,15 @@
+# IDE generated files
+STM32F469I-DISCO.xml
+
+# Hidden configuration files
+.cproject
+cproject_*
+.settings/
+
+# Compilation results
+/baseline-coremark/
+/ss-coremark/
+/sp-coremark/
+/cfi-coremark/
+/silhouette-coremark/
+/invert-coremark/
