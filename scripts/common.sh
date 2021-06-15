@@ -138,7 +138,7 @@ run() {
     # Check if the number of iterations is actually a number
     local iters=1
     if [[ -n "$5" ]]; then
-        if [[ "$5" =~ '^[0-9]+$' ]]; then
+        if [[ "$5" =~ ^[0-9]+$ ]]; then
             iters="$5"
         else
             echo "Number of iterations must be an integer!"
