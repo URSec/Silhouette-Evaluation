@@ -164,9 +164,9 @@ run() {
             mkdir -p "$perf_dir"
         fi
 
-        local perf_data="$perf_dir/$2.stat"
+        local perf_data="$perf_dir/$1-$2.stat"
         if (( $iters != 1 )); then
-            perf_data="$perf_dir/$2.$iter-stat"
+            perf_data="$perf_dir/$1-$2.$iter-stat"
         fi
         rm -rf "$perf_data"
 
