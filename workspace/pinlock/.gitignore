@@ -1,0 +1,14 @@
+# IDE generated files
+STM32F469I-DISCO.xml
+
+# Hidden configuration files
+.settings/
+
+# Compilation results
+/baseline-pinlock/
+/ss-pinlock/
+/sp-pinlock/
+/cfi-pinlock/
+/silhouette-pinlock/
+/invert-pinlock/
+/sfifull-pinlock/
