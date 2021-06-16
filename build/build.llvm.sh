@@ -26,11 +26,6 @@ rm -rf CMakeCache.txt
 export CC=clang
 export CXX=clang++
 export LD=clang
-export AR=llvm-ar
-export NM=llvm-nm
-export RANLIB=llvm-ranlib
-export READELF=llvm-readelf
-export STRIP=llvm-strip
 
 cmake -G Ninja                                                              \
       -DCMAKE_BUILD_TYPE=Release                                            \
