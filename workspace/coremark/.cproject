@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+  <storageModule moduleId="org.eclipse.cdt.core.settings">
+    <!-- Configuration of baseline-coremark -->
+    <cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.baseline-coremark">
+      <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.baseline-coremark" moduleId="org.eclipse.cdt.core.settings" name="baseline-coremark">
+        <externalSettings/>
+        <extensions>
+          <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+          <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+        </extensions>
+      </storageModule>
+      <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        <configuration artifactExtension="elf" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.baseline-coremark" name="baseline-coremark" optionalBuildProperties="org.eclipse.cdt.docker.launcher.containerbuild.property.selectedvolumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.volumes=" parent="fr.ac6.managedbuild.config.gnu.cross.exe.release" postannouncebuildStep="Printing size information:" postbuildStep="arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot;">
+          <folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.baseline-coremark." name="/" resourcePath="">
+            <toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.baseline-coremark" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release">
+              <option id="fr.ac6.managedbuild.option.gnu.cross.mcu.baseline-coremark" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F469NIHx" valueType="string"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.fpu.baseline-coremark" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv4-sp-d16" valueType="enumerated"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.baseline-coremark" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.board.baseline-coremark" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="STM32F469I-DISCO" valueType="string"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.prefix.baseline-coremark" name="Prefix" superClass="fr.ac6.managedbuild.option.gnu.cross.prefix" value="" valueType="string"/>
+              <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.baseline-coremark" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+              <builder buildPath="${workspace_loc:/coremark}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.baseline-coremark" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.baseline-coremark" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata.baseline-coremark" name="Place the data in their own section (-fdata-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.baseline-coremark" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.baseline-coremark" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.most" valueType="enumerated"/>
+                <option defaultValue="gnu.c.debugging.level.none" id="gnu.c.compiler.option.debugging.level.baseline-coremark" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.default" valueType="enumerated"/>
+                <option id="gnu.c.compiler.option.preprocessor.def.symbols.baseline-coremark" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+                  <listOptionValue builtIn="false" value="STM32"/>
+                  <listOptionValue builtIn="false" value="STM32F4"/>
+                  <listOptionValue builtIn="false" value="STM32F469NIHx"/>
+                  <listOptionValue builtIn="false" value="STM32F469I_DISCO"/>
+                  <listOptionValue builtIn="false" value="STM32F469xx"/>
+                  <listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+                  <listOptionValue builtIn="false" value="ITERATIONS=10240"/>
+                  <listOptionValue builtIn="false" value="FLAGS_STR=&quot;-O3 -flto&quot;"/>
+                  <listOptionValue builtIn="false" value="BENCHMARK_NAME=&quot;coremark&quot;"/>
+                </option>
+                <option id="gnu.c.compiler.option.include.paths.baseline-coremark" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/include&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/core}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/device}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/STM32469I-Discovery}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire480272}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire640480}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/exc7200}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ft6x06}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9325}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9341}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis302dl}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis3dsh}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ls016b8uy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q512a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/otm8009a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ov2640}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s25fl512s}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s5k5cag}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7789h2}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ts3510}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Fonts}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Log}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+                </option>
+                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other.baseline-coremark" name="Other flags" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="--target=arm-none-eabi -flto" valueType="string"/>
+                <option id="gnu.c.compiler.option.optimization.flags.baseline-coremark" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" useByScannerDiscovery="false" value="" valueType="string"/>
+                <option id="gnu.c.compiler.option.dialect.std.baseline-coremark" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="false" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+                <option id="gnu.c.compiler.option.misc.verbose.baseline-coremark" name="Verbose (-v)" superClass="gnu.c.compiler.option.misc.verbose" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="gnu.c.compiler.option.include.files.baseline-coremark" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.baseline-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.baseline-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+              </tool>
+              <tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.baseline-coremark" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+                <option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.baseline-coremark" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.cpp.optimization.level.most" valueType="enumerated"/>
+                <option defaultValue="gnu.cpp.compiler.debugging.level.none" id="gnu.cpp.compiler.option.debugging.level.baseline-coremark" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+              </tool>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.baseline-coremark" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker">
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections.baseline-coremark" name="Discard unused sections (-Wl,--gc-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script.baseline-coremark" name="Linker Script (-T)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script" useByScannerDiscovery="false" value="${ProjDirPath}/LinkerScript.ld" valueType="string"/>
+                <option id="gnu.c.link.option.libs.baseline-coremark" name="Libraries (-l)" superClass="gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+                  <listOptionValue builtIn="false" value="c"/>
+                  <listOptionValue builtIn="false" value="gcc"/>
+                  <listOptionValue builtIn="false" value="stm32f469i-disco_hal_lib"/>
+                </option>
+                <option id="gnu.c.link.option.ldflags.baseline-coremark" name="Linker flags" superClass="gnu.c.link.option.ldflags" useByScannerDiscovery="false" value="--target=arm-none-eabi -fuse-ld=lld -flto" valueType="string"/>
+                <option id="gnu.c.link.option.paths.baseline-coremark" name="Library search path (-L)" superClass="gnu.c.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/baseline-stm32f469i-disco_hal_lib}&quot;"/>
+                </option>
+                <option id="gnu.c.link.option.userobjs.baseline-coremark" name="Other objects" superClass="gnu.c.link.option.userobjs" useByScannerDiscovery="false" valueType="userObjs">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o&quot;"/>
+                </option>
+                <inputType id="cdt.managedbuild.tool.gnu.c.linker.input.baseline-coremark" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+                  <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                  <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                </inputType>
+              </tool>
+              <tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.baseline-coremark" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker"/>
+              <tool id="fr.ac6.managedbuild.tool.gnu.archiver.baseline-coremark" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release.baseline-coremark" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release">
+                <option id="gnu.both.asm.option.include.paths.baseline-coremark" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/include&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/core}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/device}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/STM32469I-Discovery}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire480272}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire640480}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/exc7200}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ft6x06}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9325}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9341}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis302dl}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis3dsh}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ls016b8uy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q512a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/otm8009a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ov2640}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s25fl512s}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s5k5cag}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7789h2}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ts3510}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Fonts}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Log}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+                </option>
+                <option id="gnu.both.asm.option.flags.baseline-coremark" name="Assembler flags" superClass="gnu.both.asm.option.flags" useByScannerDiscovery="false" value="--target=arm-none-eabi -c" valueType="string"/>
+                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.baseline-coremark" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.baseline-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+              </tool>
+            </toolChain>
+          </folderInfo>
+          <sourceEntries>
+            <entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+            <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
+          </sourceEntries>
+        </configuration>
+      </storageModule>
+      <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+    </cconfiguration>
+    <!-- Configuration of ss-coremark -->
+    <cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.ss-coremark">
+      <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.ss-coremark" moduleId="org.eclipse.cdt.core.settings" name="ss-coremark">
+        <externalSettings/>
+        <extensions>
+          <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+          <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+        </extensions>
+      </storageModule>
+      <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        <configuration artifactExtension="elf" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.ss-coremark" name="ss-coremark" optionalBuildProperties="org.eclipse.cdt.docker.launcher.containerbuild.property.selectedvolumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.volumes=" parent="fr.ac6.managedbuild.config.gnu.cross.exe.release" postannouncebuildStep="Printing size information:" postbuildStep="arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot;">
+          <folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.ss-coremark." name="/" resourcePath="">
+            <toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.ss-coremark" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release">
+              <option id="fr.ac6.managedbuild.option.gnu.cross.mcu.ss-coremark" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F469NIHx" valueType="string"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.fpu.ss-coremark" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv4-sp-d16" valueType="enumerated"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.ss-coremark" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.board.ss-coremark" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="STM32F469I-DISCO" valueType="string"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.prefix.ss-coremark" name="Prefix" superClass="fr.ac6.managedbuild.option.gnu.cross.prefix" value="" valueType="string"/>
+              <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.ss-coremark" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+              <builder buildPath="${workspace_loc:/coremark}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.ss-coremark" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ss-coremark" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata.ss-coremark" name="Place the data in their own section (-fdata-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.ss-coremark" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.ss-coremark" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.most" valueType="enumerated"/>
+                <option defaultValue="gnu.c.debugging.level.none" id="gnu.c.compiler.option.debugging.level.ss-coremark" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.default" valueType="enumerated"/>
+                <option id="gnu.c.compiler.option.preprocessor.def.symbols.ss-coremark" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+                  <listOptionValue builtIn="false" value="STM32"/>
+                  <listOptionValue builtIn="false" value="STM32F4"/>
+                  <listOptionValue builtIn="false" value="STM32F469NIHx"/>
+                  <listOptionValue builtIn="false" value="STM32F469I_DISCO"/>
+                  <listOptionValue builtIn="false" value="STM32F469xx"/>
+                  <listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+                  <listOptionValue builtIn="false" value="ITERATIONS=10240"/>
+                  <listOptionValue builtIn="false" value="FLAGS_STR=&quot;-O3 -flto&quot;"/>
+                  <listOptionValue builtIn="false" value="BENCHMARK_NAME=&quot;coremark&quot;"/>
+                </option>
+                <option id="gnu.c.compiler.option.include.paths.ss-coremark" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/include&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/core}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/device}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/STM32469I-Discovery}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire480272}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire640480}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/exc7200}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ft6x06}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9325}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9341}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis302dl}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis3dsh}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ls016b8uy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q512a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/otm8009a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ov2640}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s25fl512s}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s5k5cag}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7789h2}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ts3510}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Fonts}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Log}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+                </option>
+                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other.ss-coremark" name="Other flags" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="--target=arm-none-eabi -flto" valueType="string"/>
+                <option id="gnu.c.compiler.option.optimization.flags.ss-coremark" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" useByScannerDiscovery="false" value="" valueType="string"/>
+                <option id="gnu.c.compiler.option.dialect.std.ss-coremark" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="false" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+                <option id="gnu.c.compiler.option.misc.verbose.ss-coremark" name="Verbose (-v)" superClass="gnu.c.compiler.option.misc.verbose" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="gnu.c.compiler.option.include.files.ss-coremark" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.ss-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.ss-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+              </tool>
+              <tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.ss-coremark" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+                <option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.ss-coremark" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.cpp.optimization.level.most" valueType="enumerated"/>
+                <option defaultValue="gnu.cpp.compiler.debugging.level.none" id="gnu.cpp.compiler.option.debugging.level.ss-coremark" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+              </tool>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.ss-coremark" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker">
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections.ss-coremark" name="Discard unused sections (-Wl,--gc-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script.ss-coremark" name="Linker Script (-T)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script" useByScannerDiscovery="false" value="${ProjDirPath}/LinkerScript.ld" valueType="string"/>
+                <option id="gnu.c.link.option.libs.ss-coremark" name="Libraries (-l)" superClass="gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+                  <listOptionValue builtIn="false" value="c"/>
+                  <listOptionValue builtIn="false" value="gcc"/>
+                  <listOptionValue builtIn="false" value="stm32f469i-disco_hal_lib"/>
+                </option>
+                <option id="gnu.c.link.option.ldflags.ss-coremark" name="Linker flags" superClass="gnu.c.link.option.ldflags" useByScannerDiscovery="false" value="--target=arm-none-eabi -fuse-ld=lld -flto -Wl,-mllvm,-enable-arm-silhouette-shadowstack -Wl,-mllvm,-arm-silhouette-shadowstack-offset=0x40000" valueType="string"/>
+                <option id="gnu.c.link.option.paths.ss-coremark" name="Library search path (-L)" superClass="gnu.c.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/baseline-stm32f469i-disco_hal_lib}&quot;"/>
+                </option>
+                <option id="gnu.c.link.option.userobjs.ss-coremark" name="Other objects" superClass="gnu.c.link.option.userobjs" useByScannerDiscovery="false" valueType="userObjs">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o&quot;"/>
+                </option>
+                <inputType id="cdt.managedbuild.tool.gnu.c.linker.input.ss-coremark" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+                  <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                  <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                </inputType>
+              </tool>
+              <tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.ss-coremark" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker"/>
+              <tool id="fr.ac6.managedbuild.tool.gnu.archiver.ss-coremark" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release.ss-coremark" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release">
+                <option id="gnu.both.asm.option.include.paths.ss-coremark" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/include&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/core}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/device}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/STM32469I-Discovery}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire480272}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire640480}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/exc7200}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ft6x06}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9325}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9341}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis302dl}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis3dsh}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ls016b8uy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q512a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/otm8009a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ov2640}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s25fl512s}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s5k5cag}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7789h2}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ts3510}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Fonts}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Log}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+                </option>
+                <option id="gnu.both.asm.option.flags.ss-coremark" name="Assembler flags" superClass="gnu.both.asm.option.flags" useByScannerDiscovery="false" value="--target=arm-none-eabi -c" valueType="string"/>
+                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.ss-coremark" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.ss-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+              </tool>
+            </toolChain>
+          </folderInfo>
+          <sourceEntries>
+            <entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+            <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
+          </sourceEntries>
+        </configuration>
+      </storageModule>
+      <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+    </cconfiguration>
+    <!-- Configuration of sp-coremark -->
+    <cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.sp-coremark">
+      <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.sp-coremark" moduleId="org.eclipse.cdt.core.settings" name="sp-coremark">
+        <externalSettings/>
+        <extensions>
+          <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+          <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+        </extensions>
+      </storageModule>
+      <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        <configuration artifactExtension="elf" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.sp-coremark" name="sp-coremark" optionalBuildProperties="org.eclipse.cdt.docker.launcher.containerbuild.property.selectedvolumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.volumes=" parent="fr.ac6.managedbuild.config.gnu.cross.exe.release" postannouncebuildStep="Printing size information:" postbuildStep="arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot;">
+          <folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.sp-coremark." name="/" resourcePath="">
+            <toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.sp-coremark" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release">
+              <option id="fr.ac6.managedbuild.option.gnu.cross.mcu.sp-coremark" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F469NIHx" valueType="string"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.fpu.sp-coremark" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv4-sp-d16" valueType="enumerated"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.sp-coremark" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.board.sp-coremark" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="STM32F469I-DISCO" valueType="string"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.prefix.sp-coremark" name="Prefix" superClass="fr.ac6.managedbuild.option.gnu.cross.prefix" value="" valueType="string"/>
+              <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.sp-coremark" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+              <builder buildPath="${workspace_loc:/coremark}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.sp-coremark" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.sp-coremark" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata.sp-coremark" name="Place the data in their own section (-fdata-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.sp-coremark" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.sp-coremark" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.most" valueType="enumerated"/>
+                <option defaultValue="gnu.c.debugging.level.none" id="gnu.c.compiler.option.debugging.level.sp-coremark" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.default" valueType="enumerated"/>
+                <option id="gnu.c.compiler.option.preprocessor.def.symbols.sp-coremark" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+                  <listOptionValue builtIn="false" value="STM32"/>
+                  <listOptionValue builtIn="false" value="STM32F4"/>
+                  <listOptionValue builtIn="false" value="STM32F469NIHx"/>
+                  <listOptionValue builtIn="false" value="STM32F469I_DISCO"/>
+                  <listOptionValue builtIn="false" value="STM32F469xx"/>
+                  <listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+                  <listOptionValue builtIn="false" value="ITERATIONS=10240"/>
+                  <listOptionValue builtIn="false" value="FLAGS_STR=&quot;-O3 -flto&quot;"/>
+                  <listOptionValue builtIn="false" value="BENCHMARK_NAME=&quot;coremark&quot;"/>
+                </option>
+                <option id="gnu.c.compiler.option.include.paths.sp-coremark" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/include&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/core}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/device}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/STM32469I-Discovery}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire480272}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire640480}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/exc7200}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ft6x06}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9325}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9341}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis302dl}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis3dsh}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ls016b8uy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q512a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/otm8009a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ov2640}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s25fl512s}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s5k5cag}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7789h2}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ts3510}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Fonts}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Log}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+                </option>
+                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other.sp-coremark" name="Other flags" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="--target=arm-none-eabi -flto" valueType="string"/>
+                <option id="gnu.c.compiler.option.optimization.flags.sp-coremark" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" useByScannerDiscovery="false" value="" valueType="string"/>
+                <option id="gnu.c.compiler.option.dialect.std.sp-coremark" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="false" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+                <option id="gnu.c.compiler.option.misc.verbose.sp-coremark" name="Verbose (-v)" superClass="gnu.c.compiler.option.misc.verbose" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="gnu.c.compiler.option.include.files.sp-coremark" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.sp-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.sp-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+              </tool>
+              <tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.sp-coremark" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+                <option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.sp-coremark" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.cpp.optimization.level.most" valueType="enumerated"/>
+                <option defaultValue="gnu.cpp.compiler.debugging.level.none" id="gnu.cpp.compiler.option.debugging.level.sp-coremark" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+              </tool>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.sp-coremark" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker">
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections.sp-coremark" name="Discard unused sections (-Wl,--gc-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script.sp-coremark" name="Linker Script (-T)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script" useByScannerDiscovery="false" value="${ProjDirPath}/LinkerScript.ld" valueType="string"/>
+                <option id="gnu.c.link.option.libs.sp-coremark" name="Libraries (-l)" superClass="gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+                  <listOptionValue builtIn="false" value="c"/>
+                  <listOptionValue builtIn="false" value="gcc"/>
+                  <listOptionValue builtIn="false" value="stm32f469i-disco_hal_lib"/>
+                </option>
+                <option id="gnu.c.link.option.ldflags.sp-coremark" name="Linker flags" superClass="gnu.c.link.option.ldflags" useByScannerDiscovery="false" value="--target=arm-none-eabi -fuse-ld=lld -flto -Wl,-mllvm,-enable-arm-silhouette-str2strt" valueType="string"/>
+                <option id="gnu.c.link.option.paths.sp-coremark" name="Library search path (-L)" superClass="gnu.c.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/baseline-stm32f469i-disco_hal_lib}&quot;"/>
+                </option>
+                <option id="gnu.c.link.option.userobjs.sp-coremark" name="Other objects" superClass="gnu.c.link.option.userobjs" useByScannerDiscovery="false" valueType="userObjs">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o&quot;"/>
+                </option>
+                <inputType id="cdt.managedbuild.tool.gnu.c.linker.input.sp-coremark" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+                  <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                  <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                </inputType>
+              </tool>
+              <tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.sp-coremark" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker"/>
+              <tool id="fr.ac6.managedbuild.tool.gnu.archiver.sp-coremark" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release.sp-coremark" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release">
+                <option id="gnu.both.asm.option.include.paths.sp-coremark" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/include&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/core}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/device}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/STM32469I-Discovery}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire480272}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire640480}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/exc7200}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ft6x06}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9325}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9341}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis302dl}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis3dsh}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ls016b8uy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q512a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/otm8009a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ov2640}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s25fl512s}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s5k5cag}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7789h2}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ts3510}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Fonts}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Log}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+                </option>
+                <option id="gnu.both.asm.option.flags.sp-coremark" name="Assembler flags" superClass="gnu.both.asm.option.flags" useByScannerDiscovery="false" value="--target=arm-none-eabi -c" valueType="string"/>
+                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.sp-coremark" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.sp-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+              </tool>
+            </toolChain>
+          </folderInfo>
+          <sourceEntries>
+            <entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+            <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
+          </sourceEntries>
+        </configuration>
+      </storageModule>
+      <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+    </cconfiguration>
+    <!-- Configuration of cfi-coremark -->
+    <cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.cfi-coremark">
+      <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.cfi-coremark" moduleId="org.eclipse.cdt.core.settings" name="cfi-coremark">
+        <externalSettings/>
+        <extensions>
+          <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+          <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+        </extensions>
+      </storageModule>
+      <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        <configuration artifactExtension="elf" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.cfi-coremark" name="cfi-coremark" optionalBuildProperties="org.eclipse.cdt.docker.launcher.containerbuild.property.selectedvolumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.volumes=" parent="fr.ac6.managedbuild.config.gnu.cross.exe.release" postannouncebuildStep="Printing size information:" postbuildStep="arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot;">
+          <folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.cfi-coremark." name="/" resourcePath="">
+            <toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.cfi-coremark" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release">
+              <option id="fr.ac6.managedbuild.option.gnu.cross.mcu.cfi-coremark" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F469NIHx" valueType="string"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.fpu.cfi-coremark" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv4-sp-d16" valueType="enumerated"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.cfi-coremark" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.board.cfi-coremark" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="STM32F469I-DISCO" valueType="string"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.prefix.cfi-coremark" name="Prefix" superClass="fr.ac6.managedbuild.option.gnu.cross.prefix" value="" valueType="string"/>
+              <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.cfi-coremark" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+              <builder buildPath="${workspace_loc:/coremark}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.cfi-coremark" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.cfi-coremark" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata.cfi-coremark" name="Place the data in their own section (-fdata-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.cfi-coremark" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.cfi-coremark" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.most" valueType="enumerated"/>
+                <option defaultValue="gnu.c.debugging.level.none" id="gnu.c.compiler.option.debugging.level.cfi-coremark" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.default" valueType="enumerated"/>
+                <option id="gnu.c.compiler.option.preprocessor.def.symbols.cfi-coremark" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+                  <listOptionValue builtIn="false" value="STM32"/>
+                  <listOptionValue builtIn="false" value="STM32F4"/>
+                  <listOptionValue builtIn="false" value="STM32F469NIHx"/>
+                  <listOptionValue builtIn="false" value="STM32F469I_DISCO"/>
+                  <listOptionValue builtIn="false" value="STM32F469xx"/>
+                  <listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+                  <listOptionValue builtIn="false" value="ITERATIONS=10240"/>
+                  <listOptionValue builtIn="false" value="FLAGS_STR=&quot;-O3 -flto&quot;"/>
+                  <listOptionValue builtIn="false" value="BENCHMARK_NAME=&quot;coremark&quot;"/>
+                </option>
+                <option id="gnu.c.compiler.option.include.paths.cfi-coremark" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/include&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/core}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/device}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/STM32469I-Discovery}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire480272}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire640480}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/exc7200}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ft6x06}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9325}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9341}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis302dl}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis3dsh}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ls016b8uy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q512a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/otm8009a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ov2640}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s25fl512s}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s5k5cag}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7789h2}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ts3510}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Fonts}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Log}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+                </option>
+                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other.cfi-coremark" name="Other flags" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="--target=arm-none-eabi -flto" valueType="string"/>
+                <option id="gnu.c.compiler.option.optimization.flags.cfi-coremark" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" useByScannerDiscovery="false" value="" valueType="string"/>
+                <option id="gnu.c.compiler.option.dialect.std.cfi-coremark" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="false" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+                <option id="gnu.c.compiler.option.misc.verbose.cfi-coremark" name="Verbose (-v)" superClass="gnu.c.compiler.option.misc.verbose" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="gnu.c.compiler.option.include.files.cfi-coremark" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.cfi-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.cfi-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+              </tool>
+              <tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.cfi-coremark" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+                <option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.cfi-coremark" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.cpp.optimization.level.most" valueType="enumerated"/>
+                <option defaultValue="gnu.cpp.compiler.debugging.level.none" id="gnu.cpp.compiler.option.debugging.level.cfi-coremark" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+              </tool>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.cfi-coremark" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker">
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections.cfi-coremark" name="Discard unused sections (-Wl,--gc-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script.cfi-coremark" name="Linker Script (-T)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script" useByScannerDiscovery="false" value="${ProjDirPath}/LinkerScript.ld" valueType="string"/>
+                <option id="gnu.c.link.option.libs.cfi-coremark" name="Libraries (-l)" superClass="gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+                  <listOptionValue builtIn="false" value="c"/>
+                  <listOptionValue builtIn="false" value="gcc"/>
+                  <listOptionValue builtIn="false" value="stm32f469i-disco_hal_lib"/>
+                </option>
+                <option id="gnu.c.link.option.ldflags.cfi-coremark" name="Linker flags" superClass="gnu.c.link.option.ldflags" useByScannerDiscovery="false" value="--target=arm-none-eabi -fuse-ld=lld -flto -Wl,-mllvm,-enable-arm-silhouette-cfi" valueType="string"/>
+                <option id="gnu.c.link.option.paths.cfi-coremark" name="Library search path (-L)" superClass="gnu.c.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/baseline-stm32f469i-disco_hal_lib}&quot;"/>
+                </option>
+                <option id="gnu.c.link.option.userobjs.cfi-coremark" name="Other objects" superClass="gnu.c.link.option.userobjs" useByScannerDiscovery="false" valueType="userObjs">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o&quot;"/>
+                </option>
+                <inputType id="cdt.managedbuild.tool.gnu.c.linker.input.cfi-coremark" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+                  <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                  <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                </inputType>
+              </tool>
+              <tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.cfi-coremark" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker"/>
+              <tool id="fr.ac6.managedbuild.tool.gnu.archiver.cfi-coremark" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release.cfi-coremark" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release">
+                <option id="gnu.both.asm.option.include.paths.cfi-coremark" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/include&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/core}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/device}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/STM32469I-Discovery}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire480272}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire640480}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/exc7200}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ft6x06}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9325}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9341}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis302dl}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis3dsh}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ls016b8uy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q512a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/otm8009a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ov2640}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s25fl512s}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s5k5cag}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7789h2}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ts3510}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Fonts}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Log}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+                </option>
+                <option id="gnu.both.asm.option.flags.cfi-coremark" name="Assembler flags" superClass="gnu.both.asm.option.flags" useByScannerDiscovery="false" value="--target=arm-none-eabi -c" valueType="string"/>
+                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.cfi-coremark" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.cfi-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+              </tool>
+            </toolChain>
+          </folderInfo>
+          <sourceEntries>
+            <entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+            <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
+          </sourceEntries>
+        </configuration>
+      </storageModule>
+      <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+    </cconfiguration>
+    <!-- Configuration of silhouette-coremark -->
+    <cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.silhouette-coremark">
+      <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.silhouette-coremark" moduleId="org.eclipse.cdt.core.settings" name="silhouette-coremark">
+        <externalSettings/>
+        <extensions>
+          <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+          <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+        </extensions>
+      </storageModule>
+      <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        <configuration artifactExtension="elf" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.silhouette-coremark" name="silhouette-coremark" optionalBuildProperties="org.eclipse.cdt.docker.launcher.containerbuild.property.selectedvolumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.volumes=" parent="fr.ac6.managedbuild.config.gnu.cross.exe.release" postannouncebuildStep="Printing size information:" postbuildStep="arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot;">
+          <folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.silhouette-coremark." name="/" resourcePath="">
+            <toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.silhouette-coremark" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release">
+              <option id="fr.ac6.managedbuild.option.gnu.cross.mcu.silhouette-coremark" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F469NIHx" valueType="string"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.fpu.silhouette-coremark" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv4-sp-d16" valueType="enumerated"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.silhouette-coremark" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.board.silhouette-coremark" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="STM32F469I-DISCO" valueType="string"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.prefix.silhouette-coremark" name="Prefix" superClass="fr.ac6.managedbuild.option.gnu.cross.prefix" value="" valueType="string"/>
+              <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.silhouette-coremark" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+              <builder buildPath="${workspace_loc:/coremark}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.silhouette-coremark" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.silhouette-coremark" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata.silhouette-coremark" name="Place the data in their own section (-fdata-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.silhouette-coremark" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.silhouette-coremark" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.most" valueType="enumerated"/>
+                <option defaultValue="gnu.c.debugging.level.none" id="gnu.c.compiler.option.debugging.level.silhouette-coremark" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.default" valueType="enumerated"/>
+                <option id="gnu.c.compiler.option.preprocessor.def.symbols.silhouette-coremark" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+                  <listOptionValue builtIn="false" value="STM32"/>
+                  <listOptionValue builtIn="false" value="STM32F4"/>
+                  <listOptionValue builtIn="false" value="STM32F469NIHx"/>
+                  <listOptionValue builtIn="false" value="STM32F469I_DISCO"/>
+                  <listOptionValue builtIn="false" value="STM32F469xx"/>
+                  <listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+                  <listOptionValue builtIn="false" value="ITERATIONS=10240"/>
+                  <listOptionValue builtIn="false" value="FLAGS_STR=&quot;-O3 -flto&quot;"/>
+                  <listOptionValue builtIn="false" value="BENCHMARK_NAME=&quot;coremark&quot;"/>
+                </option>
+                <option id="gnu.c.compiler.option.include.paths.silhouette-coremark" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/include&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/core}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/device}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/STM32469I-Discovery}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire480272}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire640480}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/exc7200}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ft6x06}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9325}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9341}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis302dl}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis3dsh}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ls016b8uy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q512a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/otm8009a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ov2640}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s25fl512s}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s5k5cag}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7789h2}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ts3510}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Fonts}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Log}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+                </option>
+                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other.silhouette-coremark" name="Other flags" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="--target=arm-none-eabi -flto" valueType="string"/>
+                <option id="gnu.c.compiler.option.optimization.flags.silhouette-coremark" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" useByScannerDiscovery="false" value="" valueType="string"/>
+                <option id="gnu.c.compiler.option.dialect.std.silhouette-coremark" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="false" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+                <option id="gnu.c.compiler.option.misc.verbose.silhouette-coremark" name="Verbose (-v)" superClass="gnu.c.compiler.option.misc.verbose" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="gnu.c.compiler.option.include.files.silhouette-coremark" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.silhouette-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.silhouette-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+              </tool>
+              <tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.silhouette-coremark" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+                <option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.silhouette-coremark" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.cpp.optimization.level.most" valueType="enumerated"/>
+                <option defaultValue="gnu.cpp.compiler.debugging.level.none" id="gnu.cpp.compiler.option.debugging.level.silhouette-coremark" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+              </tool>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.silhouette-coremark" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker">
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections.silhouette-coremark" name="Discard unused sections (-Wl,--gc-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script.silhouette-coremark" name="Linker Script (-T)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script" useByScannerDiscovery="false" value="${ProjDirPath}/LinkerScript.ld" valueType="string"/>
+                <option id="gnu.c.link.option.libs.silhouette-coremark" name="Libraries (-l)" superClass="gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+                  <listOptionValue builtIn="false" value="c"/>
+                  <listOptionValue builtIn="false" value="gcc"/>
+                  <listOptionValue builtIn="false" value="stm32f469i-disco_hal_lib"/>
+                </option>
+                <option id="gnu.c.link.option.ldflags.silhouette-coremark" name="Linker flags" superClass="gnu.c.link.option.ldflags" useByScannerDiscovery="false" value="--target=arm-none-eabi -fuse-ld=lld -flto -Wl,-mllvm,-enable-arm-silhouette-shadowstack -Wl,-mllvm,-arm-silhouette-shadowstack-offset=0x40000 -Wl,-mllvm,-enable-arm-silhouette-str2strt -Wl,-mllvm,-enable-arm-silhouette-cfi" valueType="string"/>
+                <option id="gnu.c.link.option.paths.silhouette-coremark" name="Library search path (-L)" superClass="gnu.c.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/baseline-stm32f469i-disco_hal_lib}&quot;"/>
+                </option>
+                <option id="gnu.c.link.option.userobjs.silhouette-coremark" name="Other objects" superClass="gnu.c.link.option.userobjs" useByScannerDiscovery="false" valueType="userObjs">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o&quot;"/>
+                </option>
+                <inputType id="cdt.managedbuild.tool.gnu.c.linker.input.silhouette-coremark" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+                  <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                  <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                </inputType>
+              </tool>
+              <tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.silhouette-coremark" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker"/>
+              <tool id="fr.ac6.managedbuild.tool.gnu.archiver.silhouette-coremark" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release.silhouette-coremark" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release">
+                <option id="gnu.both.asm.option.include.paths.silhouette-coremark" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/include&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/core}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/device}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/STM32469I-Discovery}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire480272}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire640480}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/exc7200}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ft6x06}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9325}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9341}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis302dl}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis3dsh}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ls016b8uy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q512a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/otm8009a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ov2640}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s25fl512s}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s5k5cag}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7789h2}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ts3510}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Fonts}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Log}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+                </option>
+                <option id="gnu.both.asm.option.flags.silhouette-coremark" name="Assembler flags" superClass="gnu.both.asm.option.flags" useByScannerDiscovery="false" value="--target=arm-none-eabi -c" valueType="string"/>
+                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.silhouette-coremark" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.silhouette-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+              </tool>
+            </toolChain>
+          </folderInfo>
+          <sourceEntries>
+            <entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+            <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
+          </sourceEntries>
+        </configuration>
+      </storageModule>
+      <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+    </cconfiguration>
+    <!-- Configuration of invert-coremark -->
+    <cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.invert-coremark">
+      <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.invert-coremark" moduleId="org.eclipse.cdt.core.settings" name="invert-coremark">
+        <externalSettings/>
+        <extensions>
+          <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+          <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+          <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+        </extensions>
+      </storageModule>
+      <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        <configuration artifactExtension="elf" artifactName="${ConfigName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.invert-coremark" name="invert-coremark" optionalBuildProperties="org.eclipse.cdt.docker.launcher.containerbuild.property.selectedvolumes=,org.eclipse.cdt.docker.launcher.containerbuild.property.volumes=" parent="fr.ac6.managedbuild.config.gnu.cross.exe.release" postannouncebuildStep="Printing size information:" postbuildStep="arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot;">
+          <folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.invert-coremark." name="/" resourcePath="">
+            <toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.invert-coremark" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release">
+              <option id="fr.ac6.managedbuild.option.gnu.cross.mcu.invert-coremark" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F469NIHx" valueType="string"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.fpu.invert-coremark" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv4-sp-d16" valueType="enumerated"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.invert-coremark" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.board.invert-coremark" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="STM32F469I-DISCO" valueType="string"/>
+              <option id="fr.ac6.managedbuild.option.gnu.cross.prefix.invert-coremark" name="Prefix" superClass="fr.ac6.managedbuild.option.gnu.cross.prefix" value="" valueType="string"/>
+              <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.invert-coremark" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+              <builder buildPath="${workspace_loc:/coremark}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.invert-coremark" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.invert-coremark" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata.invert-coremark" name="Place the data in their own section (-fdata-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.invert-coremark" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.invert-coremark" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.most" valueType="enumerated"/>
+                <option defaultValue="gnu.c.debugging.level.none" id="gnu.c.compiler.option.debugging.level.invert-coremark" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.default" valueType="enumerated"/>
+                <option id="gnu.c.compiler.option.preprocessor.def.symbols.invert-coremark" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+                  <listOptionValue builtIn="false" value="STM32"/>
+                  <listOptionValue builtIn="false" value="STM32F4"/>
+                  <listOptionValue builtIn="false" value="STM32F469NIHx"/>
+                  <listOptionValue builtIn="false" value="STM32F469I_DISCO"/>
+                  <listOptionValue builtIn="false" value="STM32F469xx"/>
+                  <listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+                  <listOptionValue builtIn="false" value="SS_FLIP_USER_KERNEL_PERM"/>
+                  <listOptionValue builtIn="false" value="ITERATIONS=10240"/>
+                  <listOptionValue builtIn="false" value="FLAGS_STR=&quot;-O3 -flto&quot;"/>
+                  <listOptionValue builtIn="false" value="BENCHMARK_NAME=&quot;coremark&quot;"/>
+                </option>
+                <option id="gnu.c.compiler.option.include.paths.invert-coremark" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/include&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/core}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/device}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/STM32469I-Discovery}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire480272}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire640480}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/exc7200}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ft6x06}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9325}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9341}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis302dl}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis3dsh}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ls016b8uy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q512a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/otm8009a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ov2640}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s25fl512s}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s5k5cag}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7789h2}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ts3510}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Fonts}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Log}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+                </option>
+                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other.invert-coremark" name="Other flags" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="--target=arm-none-eabi -flto" valueType="string"/>
+                <option id="gnu.c.compiler.option.optimization.flags.invert-coremark" name="Other optimization flags" superClass="gnu.c.compiler.option.optimization.flags" useByScannerDiscovery="false" value="" valueType="string"/>
+                <option id="gnu.c.compiler.option.dialect.std.invert-coremark" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="false" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+                <option id="gnu.c.compiler.option.misc.verbose.invert-coremark" name="Verbose (-v)" superClass="gnu.c.compiler.option.misc.verbose" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="gnu.c.compiler.option.include.files.invert-coremark" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.invert-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.invert-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+              </tool>
+              <tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.invert-coremark" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+                <option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.invert-coremark" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.cpp.optimization.level.most" valueType="enumerated"/>
+                <option defaultValue="gnu.cpp.compiler.debugging.level.none" id="gnu.cpp.compiler.option.debugging.level.invert-coremark" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
+              </tool>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.invert-coremark" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker">
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections.invert-coremark" name="Discard unused sections (-Wl,--gc-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script.invert-coremark" name="Linker Script (-T)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script" useByScannerDiscovery="false" value="${ProjDirPath}/LinkerScript.ld" valueType="string"/>
+                <option id="gnu.c.link.option.libs.invert-coremark" name="Libraries (-l)" superClass="gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+                  <listOptionValue builtIn="false" value="c"/>
+                  <listOptionValue builtIn="false" value="gcc"/>
+                  <listOptionValue builtIn="false" value="stm32f469i-disco_hal_lib"/>
+                </option>
+                <option id="gnu.c.link.option.ldflags.invert-coremark" name="Linker flags" superClass="gnu.c.link.option.ldflags" useByScannerDiscovery="false" value="--target=arm-none-eabi -fuse-ld=lld -flto -Wl,-mllvm,-enable-arm-silhouette-shadowstack -Wl,-mllvm,-arm-silhouette-shadowstack-offset=0x40000 -Wl,-mllvm,-enable-arm-silhouette-cfi -Wl,-mllvm,-enable-arm-silhouette-invert" valueType="string"/>
+                <option id="gnu.c.link.option.paths.invert-coremark" name="Library search path (-L)" superClass="gnu.c.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/baseline-stm32f469i-disco_hal_lib}&quot;"/>
+                </option>
+                <option id="gnu.c.link.option.userobjs.invert-coremark" name="Other objects" superClass="gnu.c.link.option.userobjs" useByScannerDiscovery="false" valueType="userObjs">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/crt0.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtend.o&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o&quot;"/>
+                </option>
+                <inputType id="cdt.managedbuild.tool.gnu.c.linker.input.invert-coremark" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+                  <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                  <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                </inputType>
+              </tool>
+              <tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.invert-coremark" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker"/>
+              <tool id="fr.ac6.managedbuild.tool.gnu.archiver.invert-coremark" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+              <tool command="${workspace_loc}/../build/llvm/bin/clang" id="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release.invert-coremark" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release">
+                <option id="gnu.both.asm.option.include.paths.invert-coremark" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                  <listOptionValue builtIn="false" value="&quot;${openstm32_compiler_path}/../arm-none-eabi/include&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/core}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/CMSIS/device}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc/Legacy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/HAL_Driver/Inc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/STM32469I-Discovery}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire480272}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ampire640480}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/Common}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/cs43l22}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/exc7200}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ft6x06}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9325}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ili9341}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/l3gd20}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis302dl}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lis3dsh}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ls016b8uy}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/lsm303dlhc}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/mfxstm32l152}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q128a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q256a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/n25q512a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/otm8009a}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ov2640}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s25fl512s}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/s5k5cag}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7735}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/st7789h2}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe1600}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/stmpe811}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/ts3510}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Components/wm8994}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Fonts}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities/Log}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${workspace_loc:/stm32f469i-disco_hal_lib/Utilities}&quot;"/>
+                  <listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+                </option>
+                <option id="gnu.both.asm.option.flags.invert-coremark" name="Assembler flags" superClass="gnu.both.asm.option.flags" useByScannerDiscovery="false" value="--target=arm-none-eabi -c" valueType="string"/>
+                <inputType id="cdt.managedbuild.tool.gnu.assembler.input.invert-coremark" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+                <inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.invert-coremark" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+              </tool>
+            </toolChain>
+          </folderInfo>
+          <sourceEntries>
+            <entry excluding="" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+            <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
+          </sourceEntries>
+        </configuration>
+      </storageModule>
+      <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+    </cconfiguration>
+  </storageModule>
+  <storageModule moduleId="refreshScope" versionNumber="2">
+    <configuration configurationName="baseline-coremark">
+      <resource resourceType="PROJECT" workspacePath="/coremark"/>
+    </configuration>
+    <configuration configurationName="ss-coremark">
+      <resource resourceType="PROJECT" workspacePath="/coremark"/>
+    </configuration>
+    <configuration configurationName="sp-coremark">
+      <resource resourceType="PROJECT" workspacePath="/coremark"/>
+    </configuration>
+    <configuration configurationName="cfi-coremark">
+      <resource resourceType="PROJECT" workspacePath="/coremark"/>
+    </configuration>
+    <configuration configurationName="silhouette-coremark">
+      <resource resourceType="PROJECT" workspacePath="/coremark"/>
+    </configuration>
+    <configuration configurationName="invert-coremark">
+      <resource resourceType="PROJECT" workspacePath="/coremark"/>
+    </configuration>
+  </storageModule>
+  <storageModule moduleId="scannerConfiguration">
+    <autodiscovery enabled="false" problemReportingEnabled="false" selectedProfileId=""/>
+    <scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.baseline-coremark;fr.ac6.managedbuild.config.gnu.cross.exe.release.baseline-coremark.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.baseline-coremark;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.baseline-coremark">
+      <autodiscovery enabled="false" problemReportingEnabled="false" selectedProfileId=""/>
+    </scannerConfigBuildInfo>
+    <scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.ss-coremark;fr.ac6.managedbuild.config.gnu.cross.exe.release.ss-coremark.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ss-coremark;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.ss-coremark">
+      <autodiscovery enabled="false" problemReportingEnabled="false" selectedProfileId=""/>
+    </scannerConfigBuildInfo>
+    <scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.sp-coremark;fr.ac6.managedbuild.config.gnu.cross.exe.release.sp-coremark.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.sp-coremark;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.sp-coremark">
+      <autodiscovery enabled="false" problemReportingEnabled="false" selectedProfileId=""/>
+    </scannerConfigBuildInfo>
+    <scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.cfi-coremark;fr.ac6.managedbuild.config.gnu.cross.exe.release.cfi-coremark.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.cfi-coremark;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.cfi-coremark">
+      <autodiscovery enabled="false" problemReportingEnabled="false" selectedProfileId=""/>
+    </scannerConfigBuildInfo>
+    <scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.silhouette-coremark;fr.ac6.managedbuild.config.gnu.cross.exe.release.silhouette-coremark.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.silhouette-coremark;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.silhouette-coremark">
+      <autodiscovery enabled="false" problemReportingEnabled="false" selectedProfileId=""/>
+    </scannerConfigBuildInfo>
+    <scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.invert-coremark;fr.ac6.managedbuild.config.gnu.cross.exe.release.invert-coremark.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.invert-coremark;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.invert-coremark">
+      <autodiscovery enabled="false" problemReportingEnabled="false" selectedProfileId=""/>
+    </scannerConfigBuildInfo>
+  </storageModule>
+  <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+    <project id="coremark.fr.ac6.managedbuild.target.gnu.cross.exe" name="Executable" projectType="fr.ac6.managedbuild.target.gnu.cross.exe"/>
+  </storageModule>
+  <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+  <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+  <storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>

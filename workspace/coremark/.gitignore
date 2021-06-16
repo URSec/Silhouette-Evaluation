@@ -2,8 +2,6 @@
 STM32F469I-DISCO.xml
 
 # Hidden configuration files
-.cproject
-cproject_*
 .settings/
 
 # Compilation results
