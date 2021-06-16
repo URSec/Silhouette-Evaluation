@@ -1,0 +1,35 @@
+# IDE generated files
+STM32F469I-DISCO.xml
+
+# Hidden configuration files
+.settings/
+
+# Compilation results
+/baseline-fatfs_ram/
+/baseline-fatfs_usd/
+/baseline-lcd_animation/
+/baseline-lcd_usd/
+/ss-fatfs_ram/
+/ss-fatfs_usd/
+/ss-lcd_animation/
+/ss-lcd_usd/
+/sp-fatfs_ram/
+/sp-fatfs_usd/
+/sp-lcd_animation/
+/sp-lcd_usd/
+/cfi-fatfs_ram/
+/cfi-fatfs_usd/
+/cfi-lcd_animation/
+/cfi-lcd_usd/
+/silhouette-fatfs_ram/
+/silhouette-fatfs_usd/
+/silhouette-lcd_animation/
+/silhouette-lcd_usd/
+/invert-fatfs_ram/
+/invert-fatfs_usd/
+/invert-lcd_animation/
+/invert-lcd_usd/
+/sfifull-fatfs_ram/
+/sfifull-fatfs_usd/
+/sfifull-lcd_animation/
+/sfifull-lcd_usd/
