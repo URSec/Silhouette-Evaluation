@@ -21,6 +21,7 @@ import() {
     if [[ ! " ${PROJECTS[@]} " =~ " $1 " ]]; then
         echo "Project must be one of the following:"
         echo "${PROJECTS[@]}"
+        usage
         exit 1
     fi
 
@@ -52,6 +53,18 @@ import() {
 # Load common components.
 #
 . "$ROOT_DIR/scripts/common.sh"
+
+#
+# Print out the usage of the script.
+#
+usage() {
+    echo
+    echo "Usage: $0 [<proj>]"
+    echo
+    echo "Import a project <proj> into the IDE.  If <proj> is not given, all "
+    echo "projects will be imported."
+    echo
+}
 
 #
 # Entrance of the script.
