@@ -157,7 +157,8 @@ run() {
 
     for iter in `seq 0 $(( iters - 1 ))`; do
         # Kill all screens first
-        screen -X kill >& /dev/null
+        local screen_name="ttyACM0"
+        screen -S "$screen_name" -X kill >& /dev/null
 
         local perf_dir="$DATA_DIR/$PROJ-$1"
         if [[ ! -d "$perf_dir" ]]; then
@@ -171,8 +172,8 @@ run() {
         rm -rf "$perf_data"
 
         # Open screen to receive the output
-        screen -dm -L -fn -Logfile "$perf_data" /dev/ttyACM0 115200
-        screen -X logfile flush 0
+        screen -S "$screen_name" -dm -L -fn -Logfile "$perf_data" /dev/ttyACM0 115200
+        screen -S "$screen_name" -X logfile flush 0
 
         # Program the binary onto the board
         echo "Programming $1-$2.elf onto the board ......"
@@ -187,8 +188,8 @@ run() {
         # Feed input to the serial port
         if [[ -n "$4" ]] && [[ -f "$4" ]]; then
             sleep 0.01
-            screen -X readreg p "$4"
-            screen -X paste p
+            screen -S "$screen_name" -X readreg p "$4"
+            screen -S "$screen_name" -X paste p
         fi
 
         echo "Running $PROJ-$1/$2 ......"
@@ -198,7 +199,7 @@ run() {
             grep "$3" "$perf_data" >& /dev/null
         done
         sleep 1
-        screen -X kill
+        screen -S "$screen_name" -X kill >& /dev/null
 
         # Print out the result
         echo "Result:"
