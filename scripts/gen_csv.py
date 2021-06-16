@@ -43,8 +43,8 @@ benchmarks = [
     'beebs',
     'coremark',
     'coremark-pro',
-#    'pinlock',
-#    'stm32apps',
+    'pinlock',
+    'stm32apps',
 ]
 
 ###############################################################################
@@ -192,6 +192,10 @@ def gen_csv_perf(benchmark, relative, output):
                 elif 'time(ns)' in line:
                     number = int(line.split('=')[-1].lstrip())
                     break
+                # PinLock and STM32apps
+                elif 'Elapsed time' in line:
+                    number = int(line.split(' ')[-2].lstrip())
+                    break
 
             if number is not None:
                 if prog not in data:
@@ -215,6 +219,10 @@ def gen_csv_perf(benchmark, relative, output):
                 # CoreMark-Pro
                 elif 'time(ns)' in line:
                     number = int(line.split('=')[-1].lstrip())
+                    break
+                # PinLock and STM32apps
+                elif 'Elapsed time' in line:
+                    number = int(line.split(' ')[-2].lstrip())
                     break
 
             if number is not None:
