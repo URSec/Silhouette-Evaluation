@@ -7,8 +7,8 @@ PROJECTS=(
     "beebs"
     "coremark"
     "coremark-pro"
-#    "stm32apps"
-#    "pinlock"
+    "stm32apps"
+    "pinlock"
 )
 
 #
