@@ -418,8 +418,8 @@ def gen_core_settings_config(conf, program):
     # Set up C compiler
     ###########################################################################
     xml += '              <tool command="' + clang_path + '" id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.' + program_id + '" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">\n'
-    xml += '                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata.' + program_id + '" name="Place the data in their own section (-fdata-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata" useByScannerDiscovery="false" value="false" valueType="boolean"/>\n'
-    xml += '                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.' + program_id + '" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="false" valueType="boolean"/>\n'
+    xml += '                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata.' + program_id + '" name="Place the data in their own section (-fdata-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.fdata" useByScannerDiscovery="false" value="true" valueType="boolean"/>\n'
+    xml += '                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction.' + program_id + '" name="Place the function in their own section (-ffunction-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.ffunction" useByScannerDiscovery="false" value="true" valueType="boolean"/>\n'
     xml += '                <option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.' + program_id + '" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.most" valueType="enumerated"/>\n'
     xml += '                <option defaultValue="gnu.c.debugging.level.none" id="gnu.c.compiler.option.debugging.level.' + program_id + '" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.default" valueType="enumerated"/>\n'
     # Add macro definitions
@@ -497,7 +497,7 @@ def gen_core_settings_config(conf, program):
     # Set up C linker
     ###########################################################################
     xml += '              <tool command="' + clang_path + '" id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.' + program_id + '" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker">\n'
-    xml += '                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections.' + program_id + '" name="Discard unused sections (-Wl,--gc-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections" useByScannerDiscovery="false" value="false" valueType="boolean"/>\n'
+    xml += '                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections.' + program_id + '" name="Discard unused sections (-Wl,--gc-sections)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.gcsections" useByScannerDiscovery="false" value="true" valueType="boolean"/>\n'
     # Add linker script
     xml += '                <option id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script.' + program_id + '" name="Linker Script (-T)" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.script" useByScannerDiscovery="false" value="${ProjDirPath}/LinkerScript.ld" valueType="string"/>\n'
     # Add linked libraries
