@@ -32,10 +32,10 @@ case $1 in
 "run" )
     if (( $# == 2 )); then
         for program in ${PROGRAMS[@]}; do
-            run $2 $program "Elapsed time" "$ROOT_DIR/scripts/pinlock-input.txt" 20
+            run $2 $program "Elapsed time" "$ROOT_DIR/scripts/pinlock-input.txt"
         done
     else
-        run $2 $3 "Elapsed time" "$ROOT_DIR/scripts/pinlock-input.txt" 20
+        run $2 $3 "Elapsed time" "$ROOT_DIR/scripts/pinlock-input.txt"
     fi
     ;;
 * )
