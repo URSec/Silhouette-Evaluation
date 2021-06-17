@@ -35,9 +35,16 @@ case $1 in
 "run" )
     if (( $# == 2 )); then
         for program in ${PROGRAMS[@]}; do
+            if [[ "$2" = "sfifull" ]] && [[ "$program" = "fatfs_ram" ]]; then
+                continue
+            fi
             run $2 $program "Elapsed time"
         done
     else
+        if [[ "$2" = "sfifull" ]] && [[ "$3" = "fatfs_ram" ]]; then
+            echo "Combination not allowed"
+            exit 1
+        fi
         run $2 $3 "Elapsed time"
     fi
     ;;
@@ -45,11 +52,18 @@ case $1 in
     if (( $# == 1 )); then
         # Compile each benchmark program
         for program in ${PROGRAMS[@]}; do
+            if [[ "$1" = "sfifull" ]] && [[ "$program" = "fatfs_ram" ]]; then
+                continue
+            fi
             compile $1 $program
         done
 
         echo Done
     else
+        if [[ "$1" = "sfifull" ]] && [[ "$2" = "fatfs_ram" ]]; then
+            echo "Combination not allowed"
+            exit 1
+        fi
         compile $1 $2
     fi
     ;;
