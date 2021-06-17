@@ -581,6 +581,8 @@ def gen_cproject():
     xml += gen_core_settings_header()
     for conf in configurations:
         for program in sorted(programs.keys()):
+            if conf == 'sfifull' and program == 'fatfs_ram':
+                continue
             xml += gen_core_settings_config(conf, program)
     xml += gen_core_settings_footer()
 
@@ -588,6 +590,8 @@ def gen_cproject():
     xml += gen_refresh_scope_header()
     for conf in configurations:
         for program in sorted(programs.keys()):
+            if conf == 'sfifull' and program == 'fatfs_ram':
+                continue
             xml += gen_refresh_scope_config(conf, program)
     xml += gen_refresh_scope_footer()
 
@@ -595,6 +599,8 @@ def gen_cproject():
     xml += gen_scanner_header()
     for conf in configurations:
         for program in sorted(programs.keys()):
+            if conf == 'sfifull' and program == 'fatfs_ram':
+                continue
             xml += gen_scanner_config(conf, program)
     xml += gen_scanner_footer()
 
@@ -612,6 +618,8 @@ def gen_language_settings():
     xml += '<project>\n'
     for conf in configurations:
         for program in sorted(programs.keys()):
+            if conf == 'sfifull' and program == 'fatfs_ram':
+                continue
             program_id = conf + '-' + program
             xml += '  <configuration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.' + program_id + '" name="' + program_id + '">\n'
             xml += '    <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">\n'
