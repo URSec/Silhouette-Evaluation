@@ -1,0 +1,5 @@
+# Raw experiment data
+/data/
+
+# Binaries and build logs
+/debug/
