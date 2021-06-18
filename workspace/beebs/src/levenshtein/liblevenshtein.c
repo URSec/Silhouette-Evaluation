@@ -39,7 +39,7 @@
    along with this program. If not, see <http://www.gnu.org/licenses/>. */
 
 /*
- * Copyright (C) 2019 University of Rochester
+ * Copyright (C) 2020 University of Rochester
  *
  * Modified to use heap for variable-sized stack object by: Zhuojia Shen
  */
