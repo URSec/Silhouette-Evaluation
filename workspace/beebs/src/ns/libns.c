@@ -21,6 +21,12 @@
    You should have received a copy of the GNU General Public License
    along with this program. If not, see <http://www.gnu.org/licenses/>. */
 
+/*
+ * Copyright (C) 2019 University of Rochester
+ *
+ * Modified to verify the result by: Zhuojia Shen
+ */
+
 #include "support.h"
 
 /* This scale factor will be changed to equalise the runtime of the
