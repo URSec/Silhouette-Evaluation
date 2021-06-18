@@ -751,6 +751,8 @@ char	*al_getenv( const char *key )
  *			Use bmark_lite.c: main for benchmark specific init..
  * ---------------------------------------------------------------------------*/
 
+extern e_u32 verify_output;
+
 void redirect_std_files(void);
 void	al_main( int argc, char* argv[]  )
 {
@@ -763,6 +765,8 @@ void	al_main( int argc, char* argv[]  )
 	> Many systems will not need to put anything in this section. However,
 	> special command line options may make porting your benchmarks easier.
 	*/
+
+	verify_output = 0;
 
 #if 	!HOST_EXAMPLE_CODE
 #endif
