@@ -15,7 +15,7 @@
  * limitations under the License.
  *
  * Original Author: Shay Gal-on
- * Ported to STM32L475 ARMv7-M board by: Zhuojia Shen
+ * Ported to STM32F469 ARMv7-M board by: Zhuojia Shen
  */
 
 /*
