@@ -62,6 +62,7 @@ Silhouette-Evaluation
 |   |-- pinlock           # Source code of PinLock application
 |   |-- stm32apps         # Source code of 4 applications from manufacturer
 |   |-- stm32f469i-dis... # Source code of HAL library for STM32F469 Discovery
+|   |-- project-template  # Source code of a project template for new projects
 |
 |-- README.md             # This README file
 ```
@@ -208,3 +209,131 @@ For example, if you want to see how Silhouette performs on BEEBS, run
 ./scripts/gen_csv.py -b beebs -t perf -r
 ```
 and you will get an output file named `perf-beebs.csv` in the working directory.
+
+## Extend the Evaluation
+
+In some cases you might want to extend Silhouette's evaluation to support other
+programs and/or to use other boards.  Here we provide some general guidance to
+do that.
+
+### Compile and Run Other Programs
+
+To compile and run a new program on the same STM32F469 Discovery board, the
+easiest way is to use the IDE in GUI.  The System Workbench IDE has full
+debugging support for the board and can be used to kick off a new project
+quickly.  However, in order to use Silhouette, the new project's settings must
+be tweaked a bit.  Specifically:
+- The C/C++ compiler for the project needs to be changed from
+  `arm-none-eabi-gcc` to the LLVM-based Silhouette compiler (i.e.,
+  `build/llvm/bin/clang`).
+- Add `--target=arm-none-eabi` to the project's compiler flags to tell the
+  compiler that we are doing cross compilation for bare-metal ARM targets.
+- The following options must be added to the project's compiler flags to enable
+  the Silhouette passes:
+  - `-mllvm -enable-arm-silhouette-str2strt`: This option enables the store
+    hardening pass.
+  - `-mllvm -enable-arm-silhouette-shadowstack`: This option enables the shadow
+    stack pass.
+  - `-mllvm -enable-arm-silhouette-cfi`: This option enables the CFI pass.
+- If using link time optimization (LTO), the following changes must be made:
+  - Similar to changing the C/C++ compiler, the linker for the project also
+    needs to be changed from `arm-none-eabi-gcc` to the Silhouette compiler.
+  - Similarly, add `--target=arm-none-eabi` to the project's linker flags.
+  - Instead of adding the three Silhouette options to the compiler flags, add
+    them to the linker flags in the form of
+    `-Wl,-mllvm,-enable-arm-silhouette-passname` where `passname` is replaced
+    with `str2strt`, `shadowstack`, or `cfi`.
+- Unlike the default `arm-none-eabi-gcc`, the Silhouette compiler cannot
+  automatically find where C and compiler runtime libraries are.  So the
+  include path and the library search path for both libraries must be
+  specified explicitly.  In our evaluation, we did not transform these
+  libraries by Silhouette; instead, we used pre-compiled versions provided by
+  the IDE, by adding the following include path:
+  - `${openstm32_compiler_path}/../arm-none-eabi/include`
+
+  and adding the following library search paths:
+  - `${openstm32_compiler_path}/../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard`
+  - `${openstm32_compiler_path}/../arm-none-eabi/lib`
+  - `${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/hard`
+  - `${openstm32_compiler_path}/../lib/gcc/arm-none-eabi/7.3.1`
+  - `${openstm32_compiler_path}/../lib/gcc`
+
+  The IDE is able to figure out the location of `${openstm32_compiler_path}`,
+  resolve all these paths, and find the correct headers to include and
+  libraries to link against.
+
+In addition to the changes to the project's settings, developers need to note
+the following facts:
+- Silhouette requires the memory protection unit (MPU) to be configured
+  correctly to enforce W^X and provide a protected shadow stack, so MPU
+  configuration code must exist and be run during system initialization.
+- Silhouette adopts the parallel shadow stack design and uses a constant shadow
+  stack offset.  Developers can use the
+  `-mllvm -arm-silhouette-shadowstack-offset=` option (or the linker flag form
+  when using LTO) to specify a different shadow stack offset than the default
+  14-MB offset; this is important for the shadow stack to work correctly if the
+  shadow stack placement is different from what we used in the evaluation.
+- Since unprivileged stores cannot write to the System region regardless of the
+  MPU configuration, developers would want to vet all code that needs to access
+  the System region and place vetted functions in the trusted computing base
+  (TCB) so that they do not undergo the store hardening transformation.  In our
+  evaluation, vetted functions (including MPU configuration code) are marked
+  with `__attribute__((section("privileged_functions")))`; Silhouette passes
+  will recognize this section attribute and skip transformations on such
+  functions.  The TCB in our evaluation also includes the HAL library, which is
+  compiled separately without enabling any of the Silhouette passes (see Step 5
+  in the [setup phase](#set-up-the-evaluation-environment)).
+
+To ease the burden of correctly setting up a new project from scratch, we have
+configured a project template in the `workspace` directory for developers to
+extend.  The directory hierarchy of the template is as follows:
+
+```shell
+project-template
+|-- inc                       # Directory containing headers
+|   |-- stm32f4xx_it.h        # (From IDE) header of core exception handler declarations
+|
+|-- src                       # Directory containing source code
+|   |-- main.c                # Source of main function
+|   |-- init_f469.c           # Source of clock, UART, and MPU initialization code
+|   |-- stm32f4xx_it.c        # (From IDE) source of core exception handler definitions
+|   |-- syscalls.c            # (From IDE) source of minimal system calls
+|   |-- system_stm32f4xx.c    # (From IDE) source of system initialization code
+|
+|-- startup                   # Directory containing startup code
+|   |-- startup_stm32f469xx.S # (From IDE) source of startup code
+|
+|-- gen_cproject.py           # Script to generate IDE project configuration files
+|
+|-- LinkerScript.ld           # Linker script to use
+|
+|-- .project                  # IDE's project description file
+|
+|-- .cproject                 # IDE's project configuration file (to be generated)
+|
+|-- .settings                 # Directory containing some other IDE project
+                              # configuration files (to be generated)
+```
+
+The core of the template is the `gen_cproject.py` script, which we wrote to
+generate a `.cproject` file that describes all combinations of configuration-,
+project-, program-, and library-specific settings.  Developers can modify this
+script to generate a `.cproject` file that tailors the IDE's build process for
+their programs.  For example, developers can define specific macros and add
+specific compiler flags in each element of the `libraries`, `programs`,
+`middlewares`, and `configurations` variables.  Developers can look at existing
+projects' `gen_cproject.py` script to see how we configured existing
+benchmark/application projects.
+
+After generating a `.cproject` file by the script, developers can import the
+new project into the IDE and start normal development.
+
+### Port to Another Board
+
+Porting existing Silhouette-enabled programs to another board can be
+straightforward, hard, or even impossible.  This is because different boards
+can have different memory size and location, different types of peripherals,
+different kind of processors, etc.  The best advice we can give is to follow
+the standard development procedure of the target board (e.g., use the
+vendor-provided IDE) to first get a program running correctly and then try to
+apply Silhouette's transformations.
