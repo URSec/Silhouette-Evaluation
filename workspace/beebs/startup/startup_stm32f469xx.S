@@ -42,6 +42,12 @@
   ******************************************************************************
   */
 
+/*
+ * Copyright (C) 2019, 2020 University of Rochester
+ *
+ * Modified for the Silhouette project
+ */
+
   .syntax unified
   .cpu cortex-m4
   .fpu softvfp

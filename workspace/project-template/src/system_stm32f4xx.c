@@ -49,6 +49,12 @@
   ******************************************************************************
   */
 
+/*
+ * Copyright (C) 2021 University of Rochester
+ *
+ * Modified for the Silhouette project
+ */
+
 /** @addtogroup CMSIS
   * @{
   */

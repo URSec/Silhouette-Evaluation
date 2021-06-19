@@ -8,6 +8,12 @@
   ******************************************************************************
 */
 
+/*
+ * Copyright (C) 2021 University of Rochester
+ *
+ * Modified for the Silhouette project
+ */
+
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx.h"

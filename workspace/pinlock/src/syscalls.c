@@ -43,6 +43,12 @@
 *****************************************************************************
 */
 
+/*
+ * Copyright (C) 2020 University of Rochester
+ *
+ * Modified for the Silhouette project
+ */
+
 /* Includes */
 #include <sys/stat.h>
 #include <stdlib.h>
