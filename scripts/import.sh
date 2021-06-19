@@ -67,6 +67,12 @@ usage() {
 }
 
 #
+# Disable the compile() and run() functions.
+#
+unset compile
+unset run
+
+#
 # Entrance of the script.
 #
 if (( $# == 0 )); then
