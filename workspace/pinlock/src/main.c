@@ -8,6 +8,12 @@
   ******************************************************************************
 */
 
+/*
+ * Copyright (C) 2020 University of Rochester
+ *
+ * Ported to STM32F469 ARMv7-M board by: Zhuojia Shen
+ */
+
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
