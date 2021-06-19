@@ -1,4 +1,11 @@
 /* Created with: ../xml/core.xml */
+
+/*
+ * Copyright (C) 2020 University of Rochester
+ *
+ * Modified to ignore CLI arguments by: Zhuojia Shen
+ */
+
 /* common */
 #include "th_lib.h"
 #include "mith_workload.h"

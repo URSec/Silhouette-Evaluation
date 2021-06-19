@@ -10,6 +10,12 @@ a currently effective EEMBC Benchmark License Agreement, you must discontinue us
 Please refer to LICENSE.md for the specific license agreement that pertains to this Benchmark Software.
 */
 
+/*
+ * Copyright (C) 2019 University of Rochester
+ *
+ * Ported to STM32F469 ARMv7-M board by: Zhuojia Shen
+ */
+
 /*==============================================================================
  * File: mith/al/src/th_al.c
  *

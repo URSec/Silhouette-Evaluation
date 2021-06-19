@@ -11,6 +11,13 @@ Please refer to LICENSE.md for the specific license agreement that pertains to t
 */
 
 /* Created with: ../xml/zip-test.xml */
+
+/*
+ * Copyright (C) 2020 University of Rochester
+ *
+ * Modified to ignore CLI arguments and run more iterations by: Zhuojia Shen
+ */
+
 /* common */
 #include "th_lib.h"
 #include "mith_workload.h"

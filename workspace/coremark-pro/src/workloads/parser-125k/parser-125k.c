@@ -1,4 +1,11 @@
 /* Created with: ../xml/parser-125k.xml */
+
+/*
+ * Copyright (C) 2020 University of Rochester
+ *
+ * Modified to ignore CLI arguments and run more iterations by: Zhuojia Shen
+ */
+
 /* common */
 #include "th_lib.h"
 #include "mith_workload.h"
