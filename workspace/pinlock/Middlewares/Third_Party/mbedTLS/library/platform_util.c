@@ -20,6 +20,13 @@
  *  This file is part of Mbed TLS (https://tls.mbed.org)
  */
 
+/*
+ * Copyright (C) 2021 University of Rochester
+ *
+ * Modified to provide an alternate version of mbedtls_platform_zeroize() when
+ * MBEDTLS_PLATFORM_ZEROIZE_ALT is defined, by: Zhuojia Shen
+ */
+
 #if !defined(MBEDTLS_CONFIG_FILE)
 #include "mbedtls/config.h"
 #else
