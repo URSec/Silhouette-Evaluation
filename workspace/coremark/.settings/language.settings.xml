@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+  <configuration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.baseline-coremark" name="baseline-coremark">
+    <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+      <provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
+      <provider-reference id="org.eclipse.cdt.core.ReferencedProjectsLanguageSettingsProvider" ref="shared-provider"/>
+      <provider-reference id="org.eclipse.cdt.managedbuilder.core.MBSLanguageSettingsProvider" ref="shared-provider"/>
+    </extension>
+  </configuration>
+  <configuration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.ss-coremark" name="ss-coremark">
+    <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+      <provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
+      <provider-reference id="org.eclipse.cdt.core.ReferencedProjectsLanguageSettingsProvider" ref="shared-provider"/>
+      <provider-reference id="org.eclipse.cdt.managedbuilder.core.MBSLanguageSettingsProvider" ref="shared-provider"/>
+    </extension>
+  </configuration>
+  <configuration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.sp-coremark" name="sp-coremark">
+    <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+      <provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
+      <provider-reference id="org.eclipse.cdt.core.ReferencedProjectsLanguageSettingsProvider" ref="shared-provider"/>
+      <provider-reference id="org.eclipse.cdt.managedbuilder.core.MBSLanguageSettingsProvider" ref="shared-provider"/>
+    </extension>
+  </configuration>
+  <configuration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.cfi-coremark" name="cfi-coremark">
+    <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+      <provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
+      <provider-reference id="org.eclipse.cdt.core.ReferencedProjectsLanguageSettingsProvider" ref="shared-provider"/>
+      <provider-reference id="org.eclipse.cdt.managedbuilder.core.MBSLanguageSettingsProvider" ref="shared-provider"/>
+    </extension>
+  </configuration>
+  <configuration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.silhouette-coremark" name="silhouette-coremark">
+    <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+      <provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
+      <provider-reference id="org.eclipse.cdt.core.ReferencedProjectsLanguageSettingsProvider" ref="shared-provider"/>
+      <provider-reference id="org.eclipse.cdt.managedbuilder.core.MBSLanguageSettingsProvider" ref="shared-provider"/>
+    </extension>
+  </configuration>
+  <configuration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.invert-coremark" name="invert-coremark">
+    <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+      <provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
+      <provider-reference id="org.eclipse.cdt.core.ReferencedProjectsLanguageSettingsProvider" ref="shared-provider"/>
+      <provider-reference id="org.eclipse.cdt.managedbuilder.core.MBSLanguageSettingsProvider" ref="shared-provider"/>
+    </extension>
+  </configuration>
+</project>

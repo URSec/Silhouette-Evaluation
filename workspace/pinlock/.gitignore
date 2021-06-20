@@ -1,9 +1,6 @@
 # IDE generated files
 STM32F469I-DISCO.xml
 
-# Hidden configuration files
-.settings/
-
 # Compilation results
 /baseline-pinlock/
 /ss-pinlock/

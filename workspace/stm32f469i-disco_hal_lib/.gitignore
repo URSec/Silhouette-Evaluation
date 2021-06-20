@@ -1,8 +1,5 @@
 # IDE generated files
 STM32F469I-DISCO.xml
 
-# Hidden configuration files
-.settings/
-
 # Compilation results
 /baseline-stm32f469i-disco_hal_lib/
