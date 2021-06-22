@@ -154,6 +154,10 @@ for conf in baseline ss sp cfi silhouette invert sfifull; do
 done
 ```
 
+Note that compilation using our scripts must be done one at a time (i.e., **no
+parallel compiling of multiple programs**).  This is because the System
+Workbench IDE runs a singleton mode.
+
 The following shell code runs all programs compiled by the above shell code:
 ```shell
 for conf in baseline ss sp cfi silhouette invert sfifull; do
