@@ -53,6 +53,7 @@ Silhouette-Evaluation
 |   |-- pinlock.sh        # Script to compile/run PinLock application
 |   |-- pinlock-input.txt # Input to PinLock application
 |   |-- stm32apps.sh      # Script to compile/run 4 applications from manufacturer
+|   |-- tests.sh          # Script to compile/run test programs
 |   |-- gen_csv.py        # Script to collect experiment results into CSV files
 |
 |-- workspace             # Directory containing source code
@@ -62,6 +63,7 @@ Silhouette-Evaluation
 |   |-- pinlock           # Source code of PinLock application
 |   |-- stm32apps         # Source code of 4 applications from manufacturer
 |   |-- stm32f469i-dis... # Source code of HAL library for STM32F469 Discovery
+|   |-- tests             # Source code of test programs
 |   |-- project-template  # Source code of a project template for new projects
 |
 |-- README.md             # This README file
@@ -99,6 +101,22 @@ only need to be done once.
    ```shell
    ./scripts/hal.sh baseline
    ```
+
+### Verify Silhouette's Protections
+
+Before benchmarking Silhouette's performance, you might be wondering if
+Silhouette really provides the protections as intended.  Therefore we provide
+simple test programs to showcase Silhouette's efficacy on preventing
+control-flow hijacking attacks.  The `tests.sh` script in the `scripts`
+directory can compile our test programs and run them on an STM32F469 Discovery
+board.  The script takes command-line arguments similar to other scripts that
+compile/run benchmark/application suites (see [below](#build-and-run-programs)).
+
+Specifically, we have two test programs (`backward-corruption` and
+`forward-corruption`) that exercise simple backward-edge and forward-edge
+control-flow hijacking attacks, respectively.  Each of them can be compiled
+with and without Silhouette protections and will print out a message indicating
+whether the attack succeeded or not when being executed.
 
 ### Build and Run Programs
 
