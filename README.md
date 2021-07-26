@@ -156,7 +156,7 @@ benchmark/application suite:
 - **Silhouette-SFI**: Turn on the shadow stack, SFI, and CFI passes, denoted as
   `sfifull`.
 
-Except for CoreMark and FatFS-RAM, which do not have the Silhouette-SFI
+Except for CoreMark and FatFs-RAM, which do not have the Silhouette-SFI
 configuration, all other programs can be compiled and run using all seven
 configurations.
 
