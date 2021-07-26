@@ -23,6 +23,7 @@ PROJECTS=(
     "coremark-pro"
     "stm32apps"
     "pinlock"
+    "tests"
 )
 
 #
