@@ -1,0 +1,8 @@
+# IDE generated files
+STM32F469I-DISCO.xml
+
+# Compilation results
+/baseline-backward-corruption/
+/baseline-forward-corruption/
+/silhouette-backward-corruption/
+/silhouette-forward-corruption/
