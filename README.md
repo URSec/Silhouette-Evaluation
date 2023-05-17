@@ -164,11 +164,11 @@ The following shell code compiles all programs we use, with all possible
 configurations:
 ```shell
 for conf in baseline ss sp cfi silhouette invert sfifull; do
-    ./beebs.sh $conf
-    [ $conf != sfifull ] && ./coremark.sh $conf
-    ./coremark-pro.sh $conf
-    ./pinlock.sh $conf
-    ./stm32apps.sh $conf # fatfs_ram on sfifull will be skipped automatically
+    ./scripts/beebs.sh $conf
+    [ $conf != sfifull ] && ./scripts/coremark.sh $conf
+    ./scripts/coremark-pro.sh $conf
+    ./scripts/pinlock.sh $conf
+    ./scripts/stm32apps.sh $conf # fatfs_ram on sfifull will be skipped automatically
 done
 ```
 
@@ -179,11 +179,11 @@ Workbench IDE runs a singleton mode.
 The following shell code runs all programs compiled by the above shell code:
 ```shell
 for conf in baseline ss sp cfi silhouette invert sfifull; do
-    ./beebs.sh run $conf
-    [ $conf != sfifull ] && ./coremark.sh run $conf
-    ./coremark-pro.sh run $conf
-    ./pinlock.sh run $conf
-    ./stm32apps.sh run $conf # fatfs_ram on sfifull will be skipped automatically
+    ./scripts/beebs.sh run $conf
+    [ $conf != sfifull ] && ./scripts/coremark.sh run $conf
+    ./scripts/coremark-pro.sh run $conf
+    ./scripts/pinlock.sh run $conf
+    ./scripts/stm32apps.sh run $conf # fatfs_ram on sfifull will be skipped automatically
 done
 ```
 
